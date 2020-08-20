@@ -1,4 +1,4 @@
-FROM ubi8/ubi
+FROM ubi8/s2i-base:rhel8.2
 
 RUN : && \
 	dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm && \
