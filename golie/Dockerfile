@@ -1,4 +1,4 @@
-FROM ubi8
+FROM ubi8/ubi-minimal
 
 RUN : && \
 	dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm && \
