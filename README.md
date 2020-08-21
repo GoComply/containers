@@ -1,5 +1,7 @@
 # GoComply containers
 
+[![Docker Repository on Quay](https://quay.io/repository/gocomply/golie/status "Docker Repository on Quay")](https://quay.io/repository/gocomply/golie)
+
 ## Examplary golie container usage
 
 Obtain information about remote ROLIE resource
