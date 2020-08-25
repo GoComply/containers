@@ -6,6 +6,7 @@ RUN dnf install -y golang-bin
 
 RUN go get -u -v \
 	github.com/gocomply/metaschema/cli/gocomply_metaschema \
+	github.com/gocomply/xsd2go/cli/gocomply_xsd2go \
 	github.com/rolieup/golie/cmd/golie
 
 FROM fedora:latest
