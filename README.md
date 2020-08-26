@@ -1,6 +1,4 @@
-# GoComply containers [![Gitter](https://badges.gitter.im/GoComply/community.svg)](https://gitter.im/GoComply/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-[![Docker Repository on Quay](https://quay.io/repository/gocomply/golie/status "Docker Repository on Quay")](https://quay.io/repository/gocomply/golie)
+# GoComply containers [![Docker Repository on Quay](https://quay.io/repository/gocomply/gocomply/status "Docker Repository on Quay")](https://quay.io/repository/gocomply/gocomply) [![Gitter](https://badges.gitter.im/GoComply/community.svg)](https://gitter.im/GoComply/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ## Examplary golie container usage
 
