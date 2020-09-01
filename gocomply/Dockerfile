@@ -8,6 +8,7 @@ RUN go get -u -v \
 	github.com/gocomply/metaschema/cli/gocomply_metaschema \
 	github.com/gocomply/xsd2go/cli/gocomply_xsd2go \
 	github.com/gocomply/oscalkit/cli/gocomply_oscalkit \
+	github.com/gocomply/fedramp/cli/gocomply_fedramp \
 	github.com/rolieup/golie/cmd/golie
 
 FROM fedora:latest
@@ -18,6 +19,7 @@ COPY --from=builder /root/go/bin/* /bin/
 
 RUN echo $'cat <<__END__ \n\
 GoComply Tools: \n\
+ - gocomply_fedramp    - Open source tool for processing OSCAL based FedRAMP SSPs \n\
  - gocomply_metaschema - Golang implementation of NIST\'s metaschema modeling language \n\
  - gocomply_oscalkit   - OSCAL toolkit for basic operations with OSCAL assets \n\
  - gocomply_xsd2go     - Automatically generate golang xml parser based on XSD \n\
