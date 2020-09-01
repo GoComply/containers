@@ -4,7 +4,7 @@ ENV GO111MODULE=on
 
 RUN dnf install -y golang-bin libxml2-devel
 
-RUN go get -u -v github.com/gocomply/fedramp/cli/gocomply_fedramp
+RUN GO111MODULE=off go get -u -v github.com/gocomply/fedramp/cli/gocomply_fedramp
 
 ENV GO111MODULE=on
 
