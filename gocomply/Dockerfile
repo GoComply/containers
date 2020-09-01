@@ -2,13 +2,16 @@ FROM fedora:latest as builder
 
 ENV GO111MODULE=on
 
-RUN dnf install -y golang-bin
+RUN dnf install -y golang-bin libxml2-devel
+
+RUN go get -u -v github.com/gocomply/fedramp/cli/gocomply_fedramp
+
+ENV GO111MODULE=on
 
 RUN go get -u -v \
 	github.com/gocomply/metaschema/cli/gocomply_metaschema \
 	github.com/gocomply/xsd2go/cli/gocomply_xsd2go \
 	github.com/gocomply/oscalkit/cli/gocomply_oscalkit \
-	github.com/gocomply/fedramp/cli/gocomply_fedramp \
 	github.com/rolieup/golie/cmd/golie
 
 FROM fedora:latest
