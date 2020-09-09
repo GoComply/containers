@@ -18,6 +18,8 @@ FROM fedora:latest
 
 WORKDIR /bin
 
+RUN dnf install -y git
+
 COPY --from=builder /root/go/bin/* /bin/
 
 RUN echo $'cat <<__END__ \n\
