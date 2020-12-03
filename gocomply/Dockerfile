@@ -1,4 +1,4 @@
-FROM fedora:latest as builder
+FROM registry.fedoraproject.org/fedora:latest as builder
 
 ENV GO111MODULE=on
 
