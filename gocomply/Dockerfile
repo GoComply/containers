@@ -4,7 +4,9 @@ ENV GO111MODULE=on
 
 RUN dnf install -y golang-bin libxml2-devel
 
-RUN GO111MODULE=off go get -u -v github.com/gocomply/fedramp/cli/gocomply_fedramp
+RUN GO111MODULE=off go get -u -v \
+	github.com/gocomply/fedramp/cli/gocomply_fedramp \
+	github.com/opencontrol/compliance-masonry/cmd/masonry
 
 ENV GO111MODULE=on
 
@@ -29,4 +31,5 @@ GoComply Tools: \n\
  - gocomply_oscalkit   - OSCAL toolkit for basic operations with OSCAL assets \n\
  - gocomply_xsd2go     - Automatically generate golang xml parser based on XSD \n\
  - golie               - ROLIE Implementation \n\
+ - masonry             - OpenControl implementation to construct certification documentation \n\
 __END__' >> /etc/bashrc
